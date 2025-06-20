@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Little Lemon</title>
+    <meta name="description" content="A sign up, home page.">
+    <meta name="author" content="John">
+
+     <meta property="og:title" content="A sign up, home page.">
+     <meta property="og:type" content="website">
+     <meta property="og:url" content="https://www.mysite">
+     <meta property="og:description" content="A sign up, home page.">
+     <meta property="og:image" content="image.png">
+     <meta property="og:locale" content="en-US">
+     <meta property="og:site-name" content="John's website"> 
+
+     <meta name="twitter:card" content="summary_large_image"/>
+     <meta name="twitter:site" content="John's Website"/>
+     <meta name="twitter:title" content="Twitter card metadata title"/>
+     <meta name="twitter:description" content="A sign up, home page."/>
+     <meta name="twitter:image" content="image.png"/>
+
+     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+     
+      <style>
+        body {
+            background: #0f4a8a;
+        }
+      </style>
+
+      <style> 
+        div { 
+            display: grid;
+            place-items: center;
+            position: relative;
+            top: 120px;
+        }
+      </style>
+
+      <style>
+        label {
+            position: relative;
+            top: 25px;
+        }
+      </style>
+
+      <style>
+        p {
+            position: relative;
+            top:60px
+        }
+      </style>
+
+      <style>
+        img {
+            position: relative;
+            top: -60px
+        }
+      </style>
+
+      <style>
+        a {
+            position: relative;
+            top: -30px
+        }
+      </style>
+
+    
+
+    <!-- Makes the input field not to appear red, before, the user starts, to enter data, but can only, show red input field, if the user, enters an invalid data.-->
+      <!-- The focus value, set to input, is called a psuedo class selector, and this refers to the, value set to the input. -->
+      <style>
+        input:focus:invalid{
+            border: 2px solid red
+        }
+      </style>
+
+</head>
+
+<body>
+    
+
+<header>
+    <div>
+    <img src="/Meta Frontend Course/5_Media/1_Images/Little-Lemon-Logo.jpeg" alt="This is my company's logo design" title="Company's logo image" width="240" height="135">
+    </div>
+</header> 
+
+<nav>
+    <div>
+    <a href="/Meta Frontend Course/2_Projects/2_Little_Lemon_Resturant_1/Home_Page/blog.html">Home Location Blog</a>
+    </div>
+</nav>
+
+
+
+<main>
+    <div>
+    <h1 style="color: rgb(131, 9, 59)">Sign Up</h1>
+    </div>
+
+<form action="/Meta Frontend Course/5_Images" method="post">
+<div>
+    <label for="first_name">First Name</label><br>
+    <!-- Each field has a required attribute to enable client-side validation which checks that the form is filled out by the user -->
+     <!-- Each field has a minlength attribute with its value set to a specific value. This enables client-side validation which will prompt the user if the content of the field is less or greater than the specified values.-->
+    <input type="text" id="first_name" name="first_name" required minlength="4" maxlength="8">
+</div>
+
+<div>
+    <label for="last_name">Last Name</label><br>
+    <input type="text" id="last_name" name="last_name" required minlength="4" maxlength="8">
+</div>
+
+<div>
+    <label for="user_email">Email</label><br>
+    <input type="email" id="user_email" name="user_email" required minlength="8" maxlength="25">
+</div>
+
+<div>
+    <label for="user_password">Password</label><br>
+    <input type="password" id="user_password" name="user_password" required minlength="8" maxlength="12">
+</div>
+
+<div>
+    <label for="user_confirm_password">Confirm Password</label><br>
+    <input type="password" id="user_confirm_password" name="user_confirm_password" required minlength="8" maxlength="12">
+</div>
+
+<div>
+<br><button type="submit" >Sign Up</button>
+</div>
+
+</form>
+</main>
+
+<div>
+    <footer>
+<br>    <p>Copyright Little Lemon!</p>
+        <p>Coded By John</p>
+</footer>
+</div>
+
+<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
