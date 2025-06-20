@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         
+         <title>Little Lemon</title>
+         <meta name="description" content="Little Lemon Resturant, Booking Page">
+         <meta name="author" content="John">
+
+         <style>
+            div{
+                display: grid;
+                place-items: center;
+            }
+         </style>
+
+         <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <header>
+            <div>
+            <img src="/Meta Frontend Course/5_Media/1_Images/Little-Lemon-Logo.jpeg" width="240" height="135" alt="This is, Little Lemon Resturant Logo." title="Little Lemon Resturant Logo.">
+            </div>
+        </header>
+
+        <nav>
+            <div>
+              <br><a href="/Meta Frontend Course/2_Projects/2_Little_Lemon_Resturant_1/Home_Page/blog.html">Home Location Blog</a>
+            </div>
+        </nav>
+        
+        <main>
+            <div>
+                <br><h1 style="color: blueviolet;">Book a Table</h1>
+                </div>
+
+            <form action="/registration" method="post">
+                <div>
+                    <br><label for="booking_date">Booking Date</label>
+                    <input type="date" id="booking_date" name="booking_date">
+                </div>
+
+                <div>
+                    <br><label for="booking_people">Number of People</label>
+                    <input type="range" id="booking_people" name="booking_people" min="1" max="10" value="4" oninput="this.nextElementSibling.value = this.value">
+                    <output>4</output>
+                </div>
+
+                <div>
+                    <br><label for="booking_location">Booking Location</label>
+                    <input id="booking_location" name="booking_location" list="locations">
+                    <datalist id="locations">
+                        <option value="Uptown"></option>
+                        <option value="Downtown"></option>
+                    </datalist>
+                </div>
+
+                <div>
+                    <br><button type="submit">Book Table</button>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <div>
+               <br><p>Copyright Little Lemon</p>
+            </div>
+        </footer>
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
